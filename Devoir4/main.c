@@ -35,7 +35,7 @@ void Creer_arbre(int niveau_courant, int profondeur) {
     wait(NULL);
 }
 
-// Principe : Le parent de niveau 0 lance la creation avec la profondeur donnee en parametre
+// Principe : Le parent de niveau 0 lance la creation avec la profondeur donnee en paramètre
 // Et chaque fils gauche et droite affiche son pid et le pid de son parent et s'arrete apres pour ne pas crées d'autre fils
 // L'incrementation du niveau courant permet de passer au niveau suivant. Tout en sachant que la profondeur
 // donner en parametre ne doit pas etre depasser.
