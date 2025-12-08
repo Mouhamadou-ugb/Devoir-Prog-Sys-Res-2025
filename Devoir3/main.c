@@ -212,7 +212,7 @@ int main(int argc, char *argv[]) {
         printf("Exemple d'usage:\n");
         printf("Creation d'archive: %s archive.l3info fichier1 fichier2 ...\n\n", argv[0]);
         printf("Extraction d'archive: %s -e archive.l3info\n\n", argv[0]);
-        return 0;
+        return -1;
     }
 
     if (strcmp(argv[1], "-e") == 0) {
@@ -220,7 +220,7 @@ int main(int argc, char *argv[]) {
             printf("\nErreur: nombre d' argument incorrecte en usage.\n\n");
             printf("Exemple d'usage:\n");
             printf("Extraction d'archive: %s -e archive.l3info\n\n", argv[0]);
-            return 1;
+            return -1;
         }
          Extraire_archive(argv[2]);
          return 0;
@@ -230,7 +230,7 @@ int main(int argc, char *argv[]) {
         printf("\nErreur: il faut au moins archiver un fichier.\n\n");
         printf("Exemple d'usage:\n");
         printf("Creation d'archive: %s archive.l3info fichier1 fichier2 ...\n\n", argv[0]);
-        return 1;
+        return -1;
     }
 
     Creer_archive(argv[1], &argv[2], argc - 2);
