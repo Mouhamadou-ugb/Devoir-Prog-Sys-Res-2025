@@ -1,0 +1,20 @@
+Ecrire un programme en langage C permettant l'archivage et l'extraction de fichiers, 
+similaire à des outils comme tar.  
+Le programme doit implémenter deux fonctionnalités principales :
+
+: Regrouper plusieurs fichiers en un seul fichier archive
+: Restaurer les fichiers originaux à partir d'une archive
+  Le fichier archive doit respecter la structure suivante :Un entier de 4 octets 
+  indiquant le nombre total de fichiers contenus dans l'archive
+Un tableau de structures contenant pour chaque fichier : Le nom du fichier 
+(chaîne de caractères), Les permissions/droits d'accès (mode UNIX), La taille des données en octets
+
+Les contenus des fichiers concaténés séquentiellement, dans l'ordre correspondant aux métadonnées
+  
+Exemples d'utilisation du fichier 
+# Création d'une archive 
+./myarchive archive.l3info fichier1.txt fichier2.pdf fichier3.pm3 [...] 
+
+# Extraction d'une archive
+
+./myarchive -e archive.l3info
