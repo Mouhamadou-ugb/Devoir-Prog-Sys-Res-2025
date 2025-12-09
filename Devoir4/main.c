@@ -12,7 +12,7 @@ void Creer_arbre(int niveau_courant, int profondeur) {
        return ;  
 
     fils_gauche = fork();
-    if (fils_gauche ==-1) { 
+    if (fils_gauche == -1) { 
         perror("Lors de la creation de processus."); 
         exit(-1);
     } else if (fils_gauche == 0) {                  
@@ -22,7 +22,7 @@ void Creer_arbre(int niveau_courant, int profondeur) {
     }
 
     fils_droit = fork();
-    if (fils_droit ==-1) { 
+    if (fils_droit == -1) { 
         perror("Lors de la creation de processus."); 
         exit(-1);
     } else if (fils_droit == 0) {                  
