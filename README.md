@@ -8,6 +8,8 @@ Nom : Faye
 
 Numéro étudiant : P31 2411
 
+Email : faye.mouhamadou-moustapha-mbacke@ugb.edu.sn
+
                                Cordialement, Mouhamadou Faye
 
 Merci à vous !
